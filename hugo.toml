@@ -1,8 +1,8 @@
 baseURL = "https://jptmoore.github.io/photography/"
 locale = "en-us"
-title = "Street Photography"
+#title = "Street Photography"
 theme = "gallery"
-copyright = "© John Moore"
+copyright = "© John Patrick Timur Moore"
 defaultContentLanguage = "en"
 enableRobotsTXT = true
 timeout = "120s"
@@ -12,10 +12,10 @@ timeout = "120s"
   description = "A collection of street photography"
   title = "Street Photography"
   [params.author]
-    name = "John Moore"
+    name = "John Patrick Timur Moore"
   [params.socialIcons]
-    #instagram = "https://www.instagram.com/"
-    github = "https://github.com/jptmoore/"
+    instagram = "https://www.instagram.com/jptmoore"
+    #github = "https://github.com/jptmoore/"
   [params.gallery]
     #boxSpacing = 10
     #targetRowHeight = 288
