@@ -3,6 +3,15 @@
 A street photography site built with [Hugo](https://gohugo.io/) using the
 [hugo-theme-gallery](https://github.com/nicokaiser/hugo-theme-gallery) theme.
 
+## About
+
+<!-- ABOUT:START -->
+Street photography shot on 35mm colour film.
+<!-- ABOUT:END -->
+
+This section is synced automatically from [content/about.md](content/about.md)
+on every build — edit that file, not this one.
+
 ## Adding photos
 
 Create a folder per album under `content/`, containing an `index.md` front

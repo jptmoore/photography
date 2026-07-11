@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -35,6 +35,27 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+      - name: Sync About page into README
+        run: |
+          awk '/^---$/{c++; next} c>=2' content/about.md > /tmp/about-body.md
+          python3 - README.md /tmp/about-body.md <<'PYEOF'
+          import re, sys
+          readme_path, body_path = sys.argv[1], sys.argv[2]
+          body = open(body_path).read().strip()
+          readme = open(readme_path).read()
+          new_readme = re.sub(
+              r'(<!-- ABOUT:START -->\n).*(\n<!-- ABOUT:END -->)',
+              lambda m: m.group(1) + body + m.group(2),
+              readme,
+              flags=re.DOTALL,
+          )
+          open(readme_path, 'w').write(new_readme)
+          PYEOF
+      - name: Commit README changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "docs: sync About section into README [skip ci]"
+          file_pattern: README.md
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
