@@ -7,4 +7,4 @@ menu:
     weight: 90
 ---
 
-Street photography by John Moore.
+Street photography shot on 35mm colour film.
