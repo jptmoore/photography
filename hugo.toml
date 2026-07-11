@@ -10,7 +10,7 @@ timeout = "120s"
 [params]
   defaultTheme = "dark"
   description = "A collection of street photography"
-  title = "Street Photography"
+  #title = "Street Photography"
   [params.author]
     name = "John Patrick Timur Moore"
   [params.socialIcons]
