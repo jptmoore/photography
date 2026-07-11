@@ -1,5 +1,4 @@
 ---
-description: Street photography by John Moore.
 title: Street Photography
 menus:
   main:
