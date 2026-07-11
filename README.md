@@ -24,6 +24,19 @@ resources:
       cover: true
 ```
 
+Since these are scans from film, EXIF metadata (capture date, description) is
+not used for titles or sorting — `hugo.toml` disables EXIF date/description
+extraction. Set titles and dates explicitly in front matter instead:
+
+```yaml
+resources:
+  - src: photo-1.jpg
+    title: A photo title
+    params:
+      date: 2026-01-01
+```
+
+
 ## Local development
 
 ```sh
