@@ -1,0 +1,35 @@
+baseURL = "https://jptmoore.github.io/photography/"
+locale = "en-us"
+title = "Street Photography"
+theme = "gallery"
+copyright = "© John Moore"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+timeout = "120s"
+
+[params]
+  defaultTheme = "dark"
+  description = "A collection of street photography"
+  title = "Street Photography"
+  [params.author]
+    name = "John Moore"
+  [params.socialIcons]
+    #instagram = "https://www.instagram.com/"
+    github = "https://github.com/jptmoore/"
+  [params.gallery]
+    #boxSpacing = 10
+    #targetRowHeight = 288
+    #targetRowHeightTolerance = 0.25
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML"]
+
+[imaging]
+  quality = 85
+  resampleFilter = "CatmullRom"
+  [imaging.exif]
+    disableDate = false
+    disableLatLong = true
+    includeFields = "ImageDescription|Orientation"
