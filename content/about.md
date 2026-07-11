@@ -7,4 +7,4 @@ menu:
     weight: 90
 ---
 
-Street photography shot on 35mm colour film.
+London-born street photographer working with 35mm colour film.
