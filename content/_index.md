@@ -1,5 +1,4 @@
 ---
-title: Street Photography
 menus:
   main:
     name: Home
