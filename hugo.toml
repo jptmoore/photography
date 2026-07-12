@@ -1,6 +1,6 @@
 baseURL = "https://jptmoore.github.io/photography/"
 locale = "en-us"
-#title = "Street Photography"
+title = "Street Photography"
 theme = "gallery"
 copyright = "© John Patrick Timur Moore"
 defaultContentLanguage = "en"
