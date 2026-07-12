@@ -1,7 +1,7 @@
 ---
 date: 2026-07-12
-title: Square Crop
-description: A collection of square crop photography.
+title: 28mm square crop
+#description: A collection of square crop photography.
 ---
 
 <!--
